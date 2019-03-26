@@ -12,19 +12,13 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private static final int STOP = 0;
     private static final long SHOW_TIME = 2000;
-    private ConstraintLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        initViews();
         changeScreen();
-    }
-
-    private void initViews() {
-        layout = findViewById(R.id.splashLayout);
     }
 
     private void changeScreen() {
@@ -33,7 +27,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void handleMessage(Message msg) {
                 switch (msg.what) {
                     case STOP:
-                        layout.setVisibility(View.GONE);
                         Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();

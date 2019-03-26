@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PdfViewerActivity.class);
         startActivity(intent);
     }
+
+    public void dialogWithImage(View view) {
+
+    }
 }
