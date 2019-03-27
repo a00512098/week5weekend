@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Week5Weekend</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="normal_alert_dialog">Normal Alert Dialog</string>
+    <string name="alert_dialog_list_title">You have encountered Ａ ＤＯＧＥ</string>
+    <string-array
+        name="alert_dialog_options">
+        <item>ＰＥＴ ＤＯＧＥ</item>
+        <item>ＳＮＵＧＧＬＥ ＤＯＧＥ</item>
+        <item>ＦＥＥＤ ＤＯＧＥ</item>
+    </string-array>
 </resources>
