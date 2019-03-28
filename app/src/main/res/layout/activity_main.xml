@@ -82,7 +82,7 @@
         android:onClick="sendNotification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/alertDialogCustom" />
+        app:layout_constraintTop_toBottomOf="@id/alertDialogList" />
 
     <Button
         android:id="@+id/sendSms"
