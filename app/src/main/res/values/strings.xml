@@ -6,6 +6,8 @@
     <string name="alert_dialog_list_title">You have encountered Ａ ＤＯＧＥ</string>
     <string name="notification_message">Mr. Watson, come here – I want to see you.</string>
     <string name="notification_title">Alexander Graham Bell</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="message">Message</string>
     <string-array name="alert_dialog_options">
         <item>ＰＥＴ ＤＯＧＥ</item>
         <item>ＳＮＵＧＧＬＥ ＤＯＧＥ</item>

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private static final int NOTIFICATION_ID = 200;
+    private static final int SMS_REQUEST_CODE = 42;
     private static final String CHANNEL_ID = "NOTIFICATION_CHANNEL";
     private static final String CHANNEL_NAME = "WEEK_5_WEEKEND";
     private static final String CHANNEL_DESCRIPTION = "This is the notification channel for the Week 5 Weekend project";
@@ -105,6 +107,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendSms(View view) {
         Intent intent = new Intent(this, SmsActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, SMS_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == SMS_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Toast.makeText(this, "Message Send", Toast.LENGTH_SHORT).show();
+            } else if (resultCode == RESULT_CANCELED) {
+                Toast.makeText(this, "Message Canceled", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }
