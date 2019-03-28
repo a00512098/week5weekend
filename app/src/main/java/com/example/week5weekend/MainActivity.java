@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NotificationActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-        
+
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentTitle(getString(R.string.notification_title))
@@ -101,5 +101,10 @@ public class MainActivity extends AppCompatActivity {
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
+    }
+
+    public void sendSms(View view) {
+        Intent intent = new Intent(this, SmsActivity.class);
+        startActivity(intent);
     }
 }
