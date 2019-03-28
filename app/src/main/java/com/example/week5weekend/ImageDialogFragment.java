@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AppCompatDialogFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 
 import static android.content.DialogInterface.BUTTON_NEGATIVE;
 import static android.content.DialogInterface.BUTTON_POSITIVE;
 
-public class ImageDialogFragment extends DialogFragment
+public class ImageDialogFragment extends AppCompatDialogFragment
         implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener{
 
     Handler handler = new Handler();
