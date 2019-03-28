@@ -2,7 +2,6 @@
     <string name="app_name">Week5Weekend</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
-    <string name="normal_alert_dialog">Normal Alert Dialog</string>
     <string name="alert_dialog_list_title">You have encountered Ａ ＤＯＧＥ</string>
     <string name="notification_message">Mr. Watson, come here – I want to see you.</string>
     <string name="notification_title">Alexander Graham Bell</string>
@@ -13,4 +12,17 @@
         <item>ＳＮＵＧＧＬＥ ＤＯＧＥ</item>
         <item>ＦＥＥＤ ＤＯＧＥ</item>
     </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="start_fragments">Start Fragments</string>
+    <string name="zero">0</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="alert_dialog_with_list">Alert Dialog With List</string>
+    <string name="custom_alert_dialog">Custom Alert Dialog</string>
+    <string name="normal_alert_dialog">Normal Alert Dialog</string>
+    <string name="dialog_with_image">Dialog with image</string>
+    <string name="pdf_viewer">PDF Viewer</string>
 </resources>

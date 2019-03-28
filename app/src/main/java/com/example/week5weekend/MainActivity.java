@@ -120,4 +120,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void startFragments(View view) {
+        Intent intent = new Intent(this, FragmentsActivity.class);
+        startActivity(intent);
+    }
 }
